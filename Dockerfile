@@ -1,6 +1,6 @@
 FROM ubuntu:22.04
 RUN apt-get update -y
-RUN apt-get install build-essential cmake git libboost-chrono-dev libboost-filesystem-dev libboost-test-dev libboost-thread-dev libevent-dev libminiupnpc-dev libnatpmp-dev libssl-dev libzmq3-dev help2man ninja-build python3 libgmp-dev zlib1g-dev libdb-dev libdb++-dev libqrencode-dev qttools5-dev -y
+RUN DEBIAN_FRONTEND=noninteractive apt-get install build-essential cmake git libboost-chrono-dev libboost-filesystem-dev libboost-test-dev libboost-thread-dev libevent-dev libminiupnpc-dev libnatpmp-dev libssl-dev libzmq3-dev help2man ninja-build python3 libgmp-dev zlib1g-dev libdb-dev libdb++-dev libqrencode-dev qttools5-dev -y
 
 #RUN apt-get install wget build-essential -y
 WORKDIR /opt/
