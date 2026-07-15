@@ -12,6 +12,7 @@ RUN cmake -GNinja .. -DBUILD_BITCOIN_QT=OFF
 RUN ninja
 RUN ninja check
 RUN ninja install
+RUN cp /usr/local/bin/bitcoin* /usr/bin/
 #RUN wget https://github.com/bitcoin-cash-node/bitcoin-cash-node/releases/download/v29.0.0/bitcoin-cash-node-29.0.0-x86_64-linux-gnu.tar.gz
 #RUN tar zxvf bitcoin-cash-node-29.0.0-x86_64-linux-gnu.tar.gz
 #RUN mv bitcoin-cash-node-29.0.0/bin/* /usr/bin/
